@@ -859,32 +859,48 @@ textarea:focus-visible {
     height: 52px;
   }
 
+  .hero-visual {
+    min-height: 350px;
+  }
+
   .hero-card-main {
     inset: 1rem 0 0 0;
   }
 
   .hero-badge {
-    position: relative;
-    max-width: none;
+    position: absolute;
+    z-index: 2;
+    max-width: 180px;
+    padding: 0.85rem 0.95rem;
+    border-radius: 22px;
+  }
+
+  .hero-badge strong {
+    font-size: 0.96rem;
+  }
+
+  .hero-badge span {
+    font-size: 0.88rem;
+    line-height: 1.35;
   }
 
   .badge-blue,
   .badge-yellow {
-    top: auto;
-    left: auto;
-    right: auto;
-    bottom: auto;
-    margin-top: 1rem;
+    margin-top: 0;
   }
 
-  .hero-visual {
-    display: flex;
-    flex-direction: column;
-    min-height: auto;
+  .badge-blue {
+    top: 0;
+    left: 0;
+  }
+
+  .badge-yellow {
+    right: 0;
+    bottom: 0;
   }
 
   .hero-card {
-    position: relative;
+    position: absolute;
   }
 
   .button,
@@ -915,6 +931,23 @@ textarea:focus-visible {
   .skeleton-button,
   .skeleton-button-light {
     width: 100%;
+  }
+
+  .hero-visual {
+    min-height: 320px;
+  }
+
+  .hero-badge {
+    max-width: 156px;
+    padding: 0.75rem 0.85rem;
+  }
+
+  .hero-badge strong {
+    font-size: 0.9rem;
+  }
+
+  .hero-badge span {
+    font-size: 0.8rem;
   }
 
   .module-card,
